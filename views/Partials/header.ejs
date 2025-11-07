@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= title %> | My Portfolio</title>
+
+  <!-- for styling using bootswatch for boostreap themes -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/minty/bootstrap.min.css">
+
+  <!-- using font awesome for the icons -->
+  <link rel="stylesheet" href="/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+  <!-- nav bar: hove, about, prjects, contact -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link <%= active==='home'?'active':'' %>" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link <%= active==='about'?'active':'' %>" href="/about">About</a></li>
+          <li class="nav-item"><a class="nav-link <%= active==='projects'?'active':'' %>" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link <%= active==='contact'?'active':'' %>" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
