@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- define uniform character-->
   <meta charset="utf-8" />
+
+  <!-- adds respsivness and proper scales for small devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- dynamic page title making title a variable  -->
   <title><%= title %> | My Portfolio</title>
 
-  <!-- for styling using bootswatch for boostreap themes -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/minty/bootstrap.min.css">
+  <!-- Using bootswatch Darkly Theme (Bootstrap framework where you can choose preset colour palets)
+       The link below pulls CSS theme from jsDelivr CDN for styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css">
 
-  <!-- using font awesome for the icons -->
+  <!-- Font Awesome form local using for iconns  -->
   <link rel="stylesheet" href="/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
+
 <body>
-  <!-- nav bar: hove, about, prjects, contact -->
+  <!-- navbar = bootstrap for navigation
+       navbar-expand-lg expands expands and collabpes screens
+       navbar-dark bg-dark is dark background with white text-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- containter to keep navbar alligned -->
     <div class="container">
+
+      <!-- make the MyPortfolio a logo that takes us home -->
       <a class="navbar-brand fw-bold" href="/">MyPortfolio</a>
+
+      <!-- using hamburger button for mobile and tablet for users to toggle menu -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- make menu area collapsable  -->
       <div id="nav" class="collapse navbar-collapse">
+
+        <!-- ms-auto puts the links to the rught-->
         <ul class="navbar-nav ms-auto">
+
+          <!-- making navigation links for each page gviging each link a class -->
           <li class="nav-item"><a class="nav-link <%= active==='home'?'active':'' %>" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link <%= active==='about'?'active':'' %>" href="/about">About</a></li>
           <li class="nav-item"><a class="nav-link <%= active==='projects'?'active':'' %>" href="/projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link <%= active==='contact'?'active':'' %>" href="/contact">Contact</a></li>
+
         </ul>
       </div>
     </div>
   </nav>
+

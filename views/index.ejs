@@ -1,11 +1,26 @@
+<!-- ensures each page has shared header (navbar + Bootstrap) -->
 <%- include('partials/header') %>
 
+<!-- containter to center content, py-5 for vertical spacing -->
 <div class="container py-5 text-center">
+
+  <!-- use for main heading theme's primary colour -->
   <h1 class="text-primary mb-4">Welcome to My Portfolio</h1>
-  <p class="lead">I’m <strong>Damil Randhawa</strong>, a Technology Management student passionate about data, cloud, and cybersecurity.</p>
+
+  <!-- lead= maks text larger for more emphasis -->
+  <p class="lead">
+    I’m <strong>Damil Randhawa</strong>, a Technology Management student passionate about data, cloud, and cybersecurity.
+  </p>
+
+  <!-- Gre button links to project page -->
+  <!-- btn-success = green color,mt-3 = margin top spacing -->
+  <!-- fnt awesome icon added before text with "me-2" = margin end spacing -->
   <a href="/projects" class="btn btn-success mt-3">
     <i class="fa-solid fa-code me-2"></i> See My Projects
   </a>
+
 </div>
 
+<!-- ensures each page has same footer  -->
 <%- include('partials/footer') %>
+

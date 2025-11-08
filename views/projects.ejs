@@ -1,22 +1,59 @@
+<!-- ensures each page has shared header (navbar + Bootstrap) -->
 <%- include('partials/header') %>
 
+<!-- containter to center content, py-5 for vertical spacing -->
 <div class="container py-5">
+
+  <!-- ppge title center and use the themes primary colour -->
   <h2 class="text-center text-primary mb-4">My Projects</h2>
 
+  <!-- "row" = grid layout, "g-4" = gap  between cards -->
   <div class="row g-4">
-    <!--  project card for testing -->
+
+    <!--Project 1-->
+    <!-- "col-md-4" = 3 cards per row on desktop -->
     <div class="col-md-4">
       <div class="card h-100 shadow-sm">
         <div class="card-body">
+          <!-- card title -->
           <h5 class="card-title">Loan Approval Prediction Model</h5>
+          <!-- card description -->
           <p class="card-text">Machine Learning model built using Python and scikit-learn to predict loan approvals.</p>
-          <a href="#" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+          <!-- GitHub button with link -->
+          <a href="https://github.com/Damil786/Data-Science-Project" target="_blank" class="btn btn-outline-primary btn-sm">
+            View on GitHub
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- will add more projects  -->
+    <!-- project 2:-->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">ERPsim KPI Dashboard</h5>
+          <p class="card-text">Interactive Tableau dashboard built to analyze key performance metrics from ERPsim simulation data.</p>
+          <!-- placeholder button no link -->
+          <button class="btn btn-outline-primary btn-sm">View Project</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- project 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Personal Portfolio Website</h5>
+          <p class="card-text">Built using Node.js, Express, and EJS  the site you’re currently viewing!</p>
+          <!-- Placeholder button no link -->
+          <button class="btn btn-outline-primary btn-sm">View Project</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
+<!-- ensures each page has same footer  -->
 <%- include('partials/footer') %>
+

@@ -1,27 +1,43 @@
+<!-- ensures each page has shared header (navbar + Bootstrap) -->
 <%- include('partials/header') %>
 
+<!-- containter to center content, py-5 for vertical spacing -->
 <div class="container py-5">
+
+  <!-- ppge title center and use the themes primary colour -->
   <h2 class="text-center text-primary mb-4">Contact Me</h2>
 
+  <!-- Form layout using Bootstrap grid -->
+  <!-- row = grid row, g-3 = gap size, justify-content-center = center form -->
   <form class="row g-3 justify-content-center" method="post" action="#">
+
+    <!-- Half-width field for medium screens and full width for small -->
     <div class="col-md-6">
       <label class="form-label">Name</label>
       <input type="text" class="form-control" required>
     </div>
+
     <div class="col-md-6">
       <label class="form-label">Email</label>
       <input type="email" class="form-control" required>
     </div>
+
+    <!-- full width -->
     <div class="col-12">
       <label class="form-label">Message</label>
       <textarea class="form-control" rows="4" required></textarea>
     </div>
+
+    <!-- Centered submit button with icon -->
     <div class="col-12 text-center">
       <button type="submit" class="btn btn-success">
         <i class="fa-solid fa-paper-plane me-2"></i> Send
       </button>
     </div>
+
   </form>
 </div>
 
+<!-- ensures each page has same footer  -->
 <%- include('partials/footer') %>
+
