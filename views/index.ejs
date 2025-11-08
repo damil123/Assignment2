@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<div class="container py-5 text-center">
+  <h1 class="text-primary mb-4">Welcome to My Portfolio</h1>
+  <p class="lead">I’m <strong>Damil Randhawa</strong>, a Technology Management student passionate about data, cloud, and cybersecurity.</p>
+  <a href="/projects" class="btn btn-success mt-3">
+    <i class="fa-solid fa-code me-2"></i> See My Projects
+  </a>
+</div>
+
+<%- include('partials/footer') %>

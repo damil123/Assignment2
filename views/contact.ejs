@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-4">Contact Me</h2>
+
+  <form class="row g-3 justify-content-center" method="post" action="#">
+    <div class="col-md-6">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" required>
+    </div>
+    <div class="col-12">
+      <label class="form-label">Message</label>
+      <textarea class="form-control" rows="4" required></textarea>
+    </div>
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-success">
+        <i class="fa-solid fa-paper-plane me-2"></i> Send
+      </button>
+    </div>
+  </form>
+</div>
+
+<%- include('partials/footer') %>
