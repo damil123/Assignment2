@@ -1,9 +1,27 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+/* router.get fetheces data from each page*/
+
+// home
+router.get('/', (req, res) => {
+  res.render('index', { title: 'Home', active: 'home' });
+});
+
+// aabour
+router.get('/about', (req, res) => {
+  res.render('about', { title: 'About', active: 'about' });
+});
+
+// projetcs
+router.get('/projects', (req, res) => {
+  res.render('projects', { title: 'Projects', active: 'projects' });
+});
+
+// contanct
+router.get('/contact', (req, res) => {
+  res.render('contact', { title: 'Contact', active: 'contact' });
 });
 
 module.exports = router;
+
